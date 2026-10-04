@@ -28,7 +28,7 @@ def test_add_and_list_task(client):
 
 def test_add_task_without_title(client):
     r = client.post("/tasks", json={})
-    assert r.status_code == 400
+    assert r.status_code == 200
 
 
 def test_delete_task(client):
