@@ -8,7 +8,7 @@ next_id = 1
 
 @app.route("/")
 def home():
-    return jsonify(message="Task Manager API is running", version="1.0")
+    return jsonify(message="Task Manager API v2 is running", version="1.0")
 
 
 @app.route("/health")
